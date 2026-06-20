@@ -342,6 +342,23 @@
             .paper-grid { grid-template-columns: 1fr; }
         }
     </style>
+
+<style id="desktop-img-fix">
+/* Desktop Image Fix */
+@media (min-width: 768px) {
+    .gdoc-image, figure {
+        grid-column: text !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .gdoc-image img, figure img {
+        width: auto !important;
+        max-width: 100% !important;
+        height: auto !important;
+    }
+}
+</style>
+
 </head>
 <body>
     <div class="bg-mesh"></div>
